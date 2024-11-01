@@ -161,19 +161,18 @@
 </header>
 <main>
     <div class="p-4 2xl:px-32 mt-4 xl:mt-6">
-
         <div class="rounded-xl xl:rounded-3xl h-40 xl:h-104 overflow-hidden relative">
             <img src="../../images/search/banner-d.webp" class="w-full h-full " alt="">
             <div class="absolute top-0 right-0 left-0 h-full flex flex-col">
                 <div class="p-4 xl:px-12 xl:py-8 w-full xl:w-fit">
                     <ul class="flex items-center gap-x-1 bg-gray-100 h-8 xl:h-12 px-3 rounded-lg text-xs xl:text-xm">
-                        <li class="flex line-clamp-1 xl:line-clamp-none rounded hover:bg-gray-100 transition-all duration-500">
+                        <li class="flex line-clamp-1 xl:line-clamp-none">
                             <a href="">هوم‌سرویز / </a></li>
-                        <li class="flex line-clamp-1 xl:line-clamp-none rounded hover:bg-gray-100 transition-all duration-500">
+                        <li class="flex line-clamp-1 xl:line-clamp-none">
                             <a href="">تهران / </a></li>
-                        <li class="flex line-clamp-1 xl:line-clamp-none rounded hover:bg-gray-100 transition-all duration-500">
+                        <li class="flex line-clamp-1 xl:line-clamp-none">
                             <a href="">تعمیر و سرویس خودرو تهران / </a></li>
-                        <li class="flex line-clamp-1 xl:line-clamp-none rounded hover:bg-gray-100 transition-all duration-500">
+                        <li class="flex line-clamp-1 xl:line-clamp-none">
                             <a href="">پنچرگیری و تعویض لاستیک تهران</a></li>
                     </ul>
                 </div>
@@ -236,7 +235,8 @@
                                 <h3 class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت پنچرگیری
                                     خودرو سواری در محل تهران</h3>
                             </td>
-                            <td scope="col" class="align-text-top"><p class="xl:text-base xl:font-medium">300,000 الی 350,000 تومان</p></td>
+                            <td scope="col" class="align-text-top"><p class="xl:text-base xl:font-medium">300,000 الی
+                                350,000 تومان</p></td>
                         </tr>
                         <tr role="row">
                             <td scope="col" class="pb-6">
@@ -248,19 +248,22 @@
                                 450,000 الی 500,000 تومان</p></td>
                         </tr>
                         <tr role="row">
-                            <td scope="col" class="pb-6"><h3 class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت
+                            <td scope="col" class="pb-6"><h3
+                                    class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت
                                 تعویض لاستیک زاپاس در محل تهران</h3></td>
                             <td scope="col" class="align-text-top"><p class="xl:text-base xl:font-medium">
                                 300,000 تومان</p></td>
                         </tr>
                         <tr role="row">
-                            <td scope="col" class="pb-6"><h3 class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت
+                            <td scope="col" class="pb-6"><h3
+                                    class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت
                                 تنظیم باد4 لاستیک در محل تهران</h3></td>
                             <td scope="col" class="align-text-top"><p class="xl:text-base xl:font-medium">
                                 200,000 تومان</p></td>
                         </tr>
                         <tr role="row">
-                            <td scope="col" class="pb-6"><h3 class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت
+                            <td scope="col" class="pb-6"><h3
+                                    class="text-xs xl:text-base font-medium w-3/4 xl:w-auto xl:ml-20">قیمت
                                 حداقل دستمزد تهران</h3></td>
                             <td scope="col" class="align-text-top"><p class="xl:text-base xl:font-medium">
                                 300,000 تومان</p></td>
@@ -345,12 +348,17 @@
                 </svg>
             </div>
         </div>
-        <div class="flex mt-6 gap-x-4 text-xm font-medium overflow-x-scroll xl:overflow-x-hidden xl:shadow xl:pr-4 xl:pt-4">
+        <div class="flex mt-6 gap-x-4 text-xm font-medium xl:shadow xl:pr-4 xl:pt-4" x-data="{ tab: 'partner' }">
             <a href="#partner"
-               class="focus:text-green-400 py-4 cursor-pointer text-green-400 border-b border-green-400">همیاران
-                برتر</a>
-            <a href="#comments" class="focus:text-green-400 py-4 cursor-pointer">نظرات کاربران</a>
-            <a href="#service_description" class="focus:text-green-400 py-4 cursor-pointer">توضیحات سرویس</a>
+               class="focus:text-green-400 py-4 cursor-pointer text-green-400 border-b border-green-400">
+                همیاران برتر
+            </a>
+            <a href="#comments" class="focus:text-green-400 py-4 cursor-pointer">
+                نظرات کاربران
+            </a>
+            <a href="#service_description" class="focus:text-green-400 py-4 cursor-pointer">
+                توضیحات سرویس
+            </a>
         </div>
         <div class="rounded-3xl bg-gray-100 p-4 mt-12" id="partner">
             <h2 class="text-base font-bold text-green-400">بهترین پنچرگیری ها و آپاراتی های تهران</h2>
@@ -592,36 +600,58 @@
             <div x-bind:class="service_description ? 'line-clamp-none' : 'line-clamp-3'"
                  class="line-clamp-3 xl:line-clamp-none">
                 <p>شهر <strong>تهران</strong> به عنوان پایتخت کشور با جمعیتی بیش از 8 میلیون نفر از جمله شهرهای شلوغ و
-                    پرهیاهوی کشور محسوب می شود که ساکنین آن با توجه به سبک زندگی رایج در آن کمتر فرصت رسیدگی به کارهای شخصی
+                    پرهیاهوی کشور محسوب می شود که ساکنین آن با توجه به سبک زندگی رایج در آن کمتر فرصت رسیدگی به کارهای
+                    شخصی
                     و نیازهای روزمره خود را دارند. به همین دلیل استفاده از کسب و کارهای آنلاین مورد استقبال مردم در شهر
-                    <strong>تهران</strong> واقع شده است. این کسب و کارها گسترده بوده و محدود به زمان و مکان نیستند، به طور
-                    مثال چنانچه نیاز به <a href="/tire-fitting">پنچرگیری انواع خودرو سواری</a> در شهر تهران و یا <strong>پنچرگیری
+                    <strong>تهران</strong> واقع شده است. این کسب و کارها گسترده بوده و محدود به زمان و مکان نیستند، به
+                    طور
+                    مثال چنانچه نیاز به <a href="/tire-fitting">پنچرگیری انواع خودرو سواری</a> در شهر تهران و یا
+                    <strong>پنچرگیری
                         خودرو باری</strong> در شهر <a href="/service/tehran">تهران</a> داشته باشید، می توانید با راحتی و
-                    اطمینان <strong>پنچرگیری سیار تهران</strong> خود را به <strong>بهترین پنچرگیری ها و آپاراتی های</strong>
+                    اطمینان <strong>پنچرگیری سیار تهران</strong> خود را به <strong>بهترین پنچرگیری ها و آپاراتی
+                        های</strong>
                     در شهر تهران بسپرید.</p>
                 <h2 class="text-xl font-bold mb-8">پنچرگیری خودرو باری تهران</h2>
                 <p>چنانچه در جستجوی <strong>تعویض لاستیک موتور و پنچرگیری موتور سیکلت تهران</strong> و یا <strong>پنچرگیری
-                    خودرو باری در شهر تهران</strong> هستید، هوم سرویز این امکان را در کلیه مناطق و محله های شهر تهران برای
-                    شما فراهم آورده است. کافیست با مراجعه به سایت هوم سرویز و جستجوی عبارات مرتبط با <strong>پنچرگیری سیار
-                        تهران</strong> نظیر : پنچرگیری سیار تهران , تعویض لاستیک در محل تهران , پنچرگیری شبانه روزی تهران ,
-                    تنظیم باد لاستیک در محل تهران , پنچرگیری ماشین تهران , تعویض لاستیک ماشین تهران , پنچرگیری تیوبلس تهران
-                    , پنچرگیری موتور سیکلت تهران , تعویض زاپاس تهران , تعویض لاستیک در محل شبانه روزی تهران , پنچرگیری فوری
-                    تهران , آپاراتی شبانه روزی تهران , تعویض لاستیک در محل تهران , پنچرگیری در محل تهران , پنچرگیری لاستیک
-                    خودرو تهران , تعویض لاستيک ماشین در محل تهران , پنچرگیری 24 ساعته تهران , هزینه پنچرگیری سیار تهران ,
-                    قیمت پنچرگیری ماشین در محل تهران , هزینه تعویض لاستیک تهران , قیمت پنچرگیری ماشین تهران , هزینه پنچرگیری
-                    لاستیک تیوبلس تهران , تعرفه پنچرگیری تهران و ثبت سفارش خود را در هوم سرویز انجام داده و سریع و به موقع
+                    خودرو باری در شهر تهران</strong> هستید، هوم سرویز این امکان را در کلیه مناطق و محله های شهر تهران
+                    برای
+                    شما فراهم آورده است. کافیست با مراجعه به سایت هوم سرویز و جستجوی عبارات مرتبط با <strong>پنچرگیری
+                        سیار
+                        تهران</strong> نظیر : پنچرگیری سیار تهران , تعویض لاستیک در محل تهران , پنچرگیری شبانه روزی
+                    تهران ,
+                    تنظیم باد لاستیک در محل تهران , پنچرگیری ماشین تهران , تعویض لاستیک ماشین تهران , پنچرگیری تیوبلس
+                    تهران
+                    , پنچرگیری موتور سیکلت تهران , تعویض زاپاس تهران , تعویض لاستیک در محل شبانه روزی تهران , پنچرگیری
+                    فوری
+                    تهران , آپاراتی شبانه روزی تهران , تعویض لاستیک در محل تهران , پنچرگیری در محل تهران , پنچرگیری
+                    لاستیک
+                    خودرو تهران , تعویض لاستيک ماشین در محل تهران , پنچرگیری 24 ساعته تهران , هزینه پنچرگیری سیار تهران
+                    ,
+                    قیمت پنچرگیری ماشین در محل تهران , هزینه تعویض لاستیک تهران , قیمت پنچرگیری ماشین تهران , هزینه
+                    پنچرگیری
+                    لاستیک تیوبلس تهران , تعرفه پنچرگیری تهران و ثبت سفارش خود را در هوم سرویز انجام داده و سریع و به
+                    موقع
                     <strong>پنچرگیری سیار تهران</strong> توام با اطمینان را تجربه نمایید.</p>
                 <h2 class="text-xl font-bold mb-8">پنچرگیری خودرو باری تهران</h2>
                 <p>چنانچه در جستجوی <strong>تعویض لاستیک موتور و پنچرگیری موتور سیکلت تهران</strong> و یا <strong>پنچرگیری
-                    خودرو باری در شهر تهران</strong> هستید، هوم سرویز این امکان را در کلیه مناطق و محله های شهر تهران برای
-                    شما فراهم آورده است. کافیست با مراجعه به سایت هوم سرویز و جستجوی عبارات مرتبط با <strong>پنچرگیری سیار
-                        تهران</strong> نظیر : پنچرگیری سیار تهران , تعویض لاستیک در محل تهران , پنچرگیری شبانه روزی تهران ,
-                    تنظیم باد لاستیک در محل تهران , پنچرگیری ماشین تهران , تعویض لاستیک ماشین تهران , پنچرگیری تیوبلس تهران
-                    , پنچرگیری موتور سیکلت تهران , تعویض زاپاس تهران , تعویض لاستیک در محل شبانه روزی تهران , پنچرگیری فوری
-                    تهران , آپاراتی شبانه روزی تهران , تعویض لاستیک در محل تهران , پنچرگیری در محل تهران , پنچرگیری لاستیک
-                    خودرو تهران , تعویض لاستيک ماشین در محل تهران , پنچرگیری 24 ساعته تهران , هزینه پنچرگیری سیار تهران ,
-                    قیمت پنچرگیری ماشین در محل تهران , هزینه تعویض لاستیک تهران , قیمت پنچرگیری ماشین تهران , هزینه پنچرگیری
-                    لاستیک تیوبلس تهران , تعرفه پنچرگیری تهران و ثبت سفارش خود را در هوم سرویز انجام داده و سریع و به موقع
+                    خودرو باری در شهر تهران</strong> هستید، هوم سرویز این امکان را در کلیه مناطق و محله های شهر تهران
+                    برای
+                    شما فراهم آورده است. کافیست با مراجعه به سایت هوم سرویز و جستجوی عبارات مرتبط با <strong>پنچرگیری
+                        سیار
+                        تهران</strong> نظیر : پنچرگیری سیار تهران , تعویض لاستیک در محل تهران , پنچرگیری شبانه روزی
+                    تهران ,
+                    تنظیم باد لاستیک در محل تهران , پنچرگیری ماشین تهران , تعویض لاستیک ماشین تهران , پنچرگیری تیوبلس
+                    تهران
+                    , پنچرگیری موتور سیکلت تهران , تعویض زاپاس تهران , تعویض لاستیک در محل شبانه روزی تهران , پنچرگیری
+                    فوری
+                    تهران , آپاراتی شبانه روزی تهران , تعویض لاستیک در محل تهران , پنچرگیری در محل تهران , پنچرگیری
+                    لاستیک
+                    خودرو تهران , تعویض لاستيک ماشین در محل تهران , پنچرگیری 24 ساعته تهران , هزینه پنچرگیری سیار تهران
+                    ,
+                    قیمت پنچرگیری ماشین در محل تهران , هزینه تعویض لاستیک تهران , قیمت پنچرگیری ماشین تهران , هزینه
+                    پنچرگیری
+                    لاستیک تیوبلس تهران , تعرفه پنچرگیری تهران و ثبت سفارش خود را در هوم سرویز انجام داده و سریع و به
+                    موقع
                     <strong>پنچرگیری سیار تهران</strong> توام با اطمینان را تجربه نمایید.</p>
                 <h2 class="text-xl font-bold mb-8">تعویض لاستیک موتور و پنچرگیری موتور سیکلت تهران</h2>
                 <p>پنچرگیری شبانه روزی ماشین و تعویض لاستیک در محل شهر <strong>تهران</strong> شامل کلیه خدمات مورد نیاز
@@ -629,14 +659,19 @@
                     ماشین و تعویض لاستیک در محل را با هزینه پنچرگیری ارزان به هوم سرویز بسپر می باشد.</p>
             </div>
             <div class="text-center py-4 xl:hidden">
-                <button x-bind:class="service_description ? 'hidden' : ''" x-on:click="service_description = true" class="btn-link text-xm font-medium text-blue-500">توضیحات بیشتر</button>
+                <button x-bind:class="service_description ? 'hidden' : ''" x-on:click="service_description = true"
+                        class="btn-link text-xm font-medium text-blue-500">توضیحات بیشتر
+                </button>
             </div>
         </div>
         <div class="grid grid-cols-12 mt-20">
             <div class="col-span-7 hidden xl:grid grid-cols-12 pt-8">
                 <div class="col-span-3 h-64 rounded-3xl p-6 flex flex-col justify-around items-center bg-blue-500 text-white">
-                    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" class="fill-white">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M49.5002 51C56.4037 51 62.0002 45.4036 62.0002 38.5C62.0002 31.5964 56.4037 26 49.5002 26C42.5966 26 37.0002 31.5964 37.0002 38.5C37.0002 45.4036 42.5966 51 49.5002 51ZM46.2002 34.2001C46.2002 33.4001 46.8002 32.8 47.6002 32.8C51.6002 32.8 54.8002 36 54.8002 40C54.8002 40.8 54.2002 41.4001 53.4002 41.4001C52.6002 41.4001 52.0002 40.8 52.0002 40C52.0002 37.6 50.0002 35.6 47.6002 35.6C46.8002 35.6 46.2002 35.0001 46.2002 34.2001Z" fill="#4BD274"></path>
+                    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"
+                         class="fill-white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M49.5002 51C56.4037 51 62.0002 45.4036 62.0002 38.5C62.0002 31.5964 56.4037 26 49.5002 26C42.5966 26 37.0002 31.5964 37.0002 38.5C37.0002 45.4036 42.5966 51 49.5002 51ZM46.2002 34.2001C46.2002 33.4001 46.8002 32.8 47.6002 32.8C51.6002 32.8 54.8002 36 54.8002 40C54.8002 40.8 54.2002 41.4001 53.4002 41.4001C52.6002 41.4001 52.0002 40.8 52.0002 40C52.0002 37.6 50.0002 35.6 47.6002 35.6C46.8002 35.6 46.2002 35.0001 46.2002 34.2001Z"
+                              fill="#4BD274"></path>
                         <path d="M58.0002 5.09961H29.8002C29.0002 5.09961 28.4002 5.69961 28.4002 6.49961C28.4002 7.29961 29.0002 7.89961 29.8002 7.89961H58.0002C58.8002 7.89961 59.4002 7.29961 59.4002 6.49961C59.4002 5.69961 58.8002 5.09961 58.0002 5.09961Z"></path>
                         <path d="M15.6002 5.49961C15.3002 5.19961 15.0002 5.09961 14.6002 5.09961C14.2002 5.09961 13.9002 5.29961 13.6002 5.49961C13.3002 5.79961 13.2002 6.09961 13.2002 6.49961C13.2002 6.89961 13.3002 7.19961 13.6002 7.49961C13.9002 7.79961 14.2002 7.89961 14.6002 7.89961C15.0002 7.89961 15.3002 7.69961 15.6002 7.49961C15.9002 7.19961 16.0002 6.89961 16.0002 6.49961C16.0002 6.09961 15.8002 5.69961 15.6002 5.49961Z"></path>
                         <path d="M10.4002 5.49961C10.1002 5.19961 9.80018 5.09961 9.40018 5.09961C9.00018 5.09961 8.70018 5.29961 8.40018 5.49961C8.10018 5.69961 8.00018 6.09961 8.00018 6.49961C8.00018 6.89961 8.20018 7.19961 8.40018 7.49961C8.70018 7.79961 9.00018 7.89961 9.40018 7.89961C9.80018 7.89961 10.1002 7.69961 10.4002 7.49961C10.7002 7.19961 10.8002 6.89961 10.8002 6.49961C10.8002 6.09961 10.7002 5.69961 10.4002 5.49961Z"></path>
@@ -648,12 +683,14 @@
                         <path d="M30.0002 38.9996C29.7002 38.6996 29.4002 38.5996 29.0002 38.5996C28.6002 38.5996 28.3002 38.7996 28.0002 38.9996C27.7002 39.1996 27.6002 39.5996 27.6002 39.9996C27.6002 40.3996 27.8002 40.6996 28.0002 40.9996C28.3002 41.2996 28.6002 41.3996 29.0002 41.3996C29.4002 41.3996 29.7002 41.1996 30.0002 40.9996C30.3002 40.6996 30.4002 40.3996 30.4002 39.9996C30.4002 39.5996 30.2002 39.1996 30.0002 38.9996Z"></path>
                         <path d="M28.2002 52.0996H17.3002C16.5002 52.0996 15.9002 52.6996 15.9002 53.4996C15.9002 54.2996 16.5002 54.8996 17.3002 54.8996H28.2002C29.0002 54.8996 29.6002 54.2996 29.6002 53.4996C29.6002 52.6996 29.0002 52.0996 28.2002 52.0996Z"></path>
                         <path d="M35.1002 52.4996C34.8002 52.1996 34.5002 52.0996 34.1002 52.0996C33.7002 52.0996 33.4002 52.2996 33.1002 52.4996C32.8002 52.7996 32.7002 53.0996 32.7002 53.4996C32.7002 53.8996 32.9002 54.1996 33.1002 54.4996C33.4002 54.7996 33.7002 54.8996 34.1002 54.8996C34.5002 54.8996 34.8002 54.6996 35.1002 54.4996C35.4002 54.1996 35.5002 53.8996 35.5002 53.4996C35.5002 53.0996 35.4002 52.7996 35.1002 52.4996Z"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.90018 0H63.5002C65.6002 0 67.4002 1.7 67.4002 3.9V45H65.2002V12.4H37.0002C36.4002 12.4 35.9002 11.9 35.9002 11.3C35.9002 10.7 36.4002 10.2 37.0002 10.2H65.3002V3.9C65.3002 2.9 64.5002 2.1 63.5002 2.1H3.90018C2.90018 2.1 2.10018 2.9 2.10018 3.9V10.2H32.1002C32.7002 10.2 33.2002 10.7 33.2002 11.3C33.2002 11.9 32.7002 12.4 32.1002 12.4H2.10018V68.1C2.10018 69.1 2.90018 69.9 3.90018 69.9H63.5002C64.4002 69.9 65.2002 69.1 65.2002 68.2V67H67.4002V68.1C67.4002 70.3 65.6002 72 63.5002 72H3.90018C1.70018 72 0.000183105 70.3 0.000183105 68.1V3.9C0.000183105 1.7 1.70018 0 3.90018 0Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M3.90018 0H63.5002C65.6002 0 67.4002 1.7 67.4002 3.9V45H65.2002V12.4H37.0002C36.4002 12.4 35.9002 11.9 35.9002 11.3C35.9002 10.7 36.4002 10.2 37.0002 10.2H65.3002V3.9C65.3002 2.9 64.5002 2.1 63.5002 2.1H3.90018C2.90018 2.1 2.10018 2.9 2.10018 3.9V10.2H32.1002C32.7002 10.2 33.2002 10.7 33.2002 11.3C33.2002 11.9 32.7002 12.4 32.1002 12.4H2.10018V68.1C2.10018 69.1 2.90018 69.9 3.90018 69.9H63.5002C64.4002 69.9 65.2002 69.1 65.2002 68.2V67H67.4002V68.1C67.4002 70.3 65.6002 72 63.5002 72H3.90018C1.70018 72 0.000183105 70.3 0.000183105 68.1V3.9C0.000183105 1.7 1.70018 0 3.90018 0Z"></path>
                     </svg>
                     <div class="text-xm font-bold text-center">شهر و خدمات مورد نظر خودت را انتخاب کن!</div>
                 </div>
                 <div class="col-span-3 h-64 rounded-3xl p-6 flex flex-col justify-around items-center">
-                    <svg width="68" height="72" viewBox="0 0 68 72" xmlns="http://www.w3.org/2000/svg" class="fill-black">
+                    <svg width="68" height="72" viewBox="0 0 68 72" xmlns="http://www.w3.org/2000/svg"
+                         class="fill-black">
                         <g clip-path="url(#clip0_4715:28329)">
                             <path d="M11.1 5.90078C11.1 5.30078 10.6 4.80078 9.99999 4.80078C9.39999 4.80078 8.89999 5.30078 8.89999 5.90078C8.89999 6.50078 9.39999 7.00078 9.99999 7.00078C10.6 6.90078 11.1 6.40078 11.1 5.90078Z"></path>
                             <path d="M16.2 5.90078C16.2 5.30078 15.7 4.80078 15.1 4.80078C14.5 4.80078 14 5.30078 14 5.90078C14 6.50078 14.5 7.00078 15.1 7.00078C15.7 6.90078 16.2 6.40078 16.2 5.90078Z"></path>
@@ -677,9 +714,12 @@
                     <div class="text-xm font-bold text-center">قیمت خدمات را چک کن و به سوالات جواب بده</div>
                 </div>
                 <div class="col-span-3 h-64 rounded-3xl p-6 flex flex-col justify-around items-center">
-                    <svg width="72" height="67" viewBox="0 0 72 67" xmlns="http://www.w3.org/2000/svg" class="fill-black">
+                    <svg width="72" height="67" viewBox="0 0 72 67" xmlns="http://www.w3.org/2000/svg"
+                         class="fill-black">
                         <g clip-path="url(#clip0_4715:28307)">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.1194 12.5352C30.1245 13.6915 28 16.5981 28 20.0009V30.0009H47C48.1046 30.0009 49 29.1055 49 28.0009V20.0009C49 15.9095 45.9286 12.5354 41.9658 12.0586C41.6911 14.2807 39.7964 16.0009 37.5 16.0009C35.3706 16.0009 33.5867 14.5219 33.1194 12.5352Z" fill="#4BD274"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M33.1194 12.5352C30.1245 13.6915 28 16.5981 28 20.0009V30.0009H47C48.1046 30.0009 49 29.1055 49 28.0009V20.0009C49 15.9095 45.9286 12.5354 41.9658 12.0586C41.6911 14.2807 39.7964 16.0009 37.5 16.0009C35.3706 16.0009 33.5867 14.5219 33.1194 12.5352Z"
+                                  fill="#4BD274"></path>
                             <path d="M70.2 15C69.2 14 68 13.4 66.5 13.2C67.2 12.2 67.6 11 67.6 9.7V4C67.6 2.9 67.1 1.9 66.4 1.1C65.7 0.5 64.7 0 63.6 0H58.9C57.8 0 56.8 0.5 56 1.2C55.3 1.9 54.8 2.9 54.8 4.1V9.8C54.8 11.1 55.2 12.3 55.9 13.3C54.5 13.4 53.2 14.1 52.2 15.1C51.1 16.2 50.4 17.7 50.4 19.4V30.3C50.4 30.9 50.9 31.4 51.5 31.4C58 31.4 64.5 31.4 70.9 31.4C71.5 31.4 72 30.9 72 30.3V19.3C72 17.7 71.3 16.1 70.2 15ZM57 4C57 3.5 57.2 3 57.6 2.6C58 2.2 58.4 2 59 2H63.7C64.2 2 64.7 2.2 65.1 2.6C65.3 3 65.5 3.5 65.5 4V6L60.6 4.3C60.3 4.2 60 4.2 59.7 4.4L57 5.9V4ZM65.5 8.3V9.8C65.5 11 65 12 64.2 12.8C63.4 13.6 62.4 14.1 61.2 14.1C60 14.1 59 13.6 58.2 12.8C57.4 12 56.9 11 56.9 9.8V8.2L60.3 6.5L65.5 8.3ZM69.9 29.2H67.9V21.3C67.9 20.7 67.4 20.2 66.8 20.2C66.2 20.2 65.7 20.7 65.7 21.3V29.2H56.5V21.3C56.5 20.7 56 20.2 55.4 20.2C54.8 20.2 54.3 20.7 54.3 21.3V29.2H52.3V19.4C52.3 18.3 52.7 17.3 53.5 16.6C54.2 15.9 55.2 15.4 56.3 15.4H58C58.9 15.9 59.9 16.2 61 16.2C62.1 16.2 63.1 15.9 64 15.4H65.7C66.8 15.4 67.8 15.8 68.5 16.6C69.2 17.3 69.7 18.3 69.7 19.4V29.2H69.9Z"></path>
                             <path d="M19.8 15C18.8 14 17.5 13.4 16.1 13.2C16.8 12.2 17.2 11 17.2 9.7V5.7V1.1C17.2 0.5 16.7 0 16.1 0H8.4C7.3 0 6.3 0.5 5.6 1.2C4.8 1.9 4.4 2.9 4.4 4V5.7V9.7C4.4 11 4.8 12.2 5.5 13.2C4 13.4 2.8 14.1 1.8 15C0.7 16.1 0 17.7 0 19.3V30.2C0 30.8 0.5 31.3 1.1 31.3C7.6 31.3 14.1 31.3 20.5 31.3C21.1 31.3 21.6 30.8 21.6 30.2V19.3C21.5 17.7 20.9 16.1 19.8 15ZM6.5 4C6.5 3.5 6.7 3 7.1 2.6C7.5 2.2 7.9 2 8.5 2H15V4.6H6.5V4ZM6.5 6.8H15V9.7C15 10.9 14.5 11.9 13.7 12.7C12.9 13.5 11.9 14 10.7 14C9.5 14 8.5 13.5 7.7 12.7C7 12 6.5 10.9 6.5 9.7V6.8ZM19.4 29.2H17.4V21.3C17.4 20.7 16.9 20.2 16.3 20.2C15.7 20.2 15.2 20.7 15.2 21.3V29.2H6.2V21.3C6.2 20.7 5.7 20.2 5.1 20.2C4.5 20.2 4 20.7 4 21.3V29.2H2V19.4C2 18.3 2.4 17.3 3.2 16.6C4 15.8 5 15.4 6.1 15.4H7.8C8.7 15.9 9.7 16.2 10.8 16.2C11.9 16.2 12.9 15.9 13.8 15.4H15.5C16.6 15.4 17.6 15.8 18.3 16.6C19 17.3 19.5 18.3 19.5 19.4V29.2H19.4Z"></path>
                             <path d="M45 15C44 14 42.8 13.4 41.3 13.2C42 12.2 42.4 11 42.4 9.7V4C42.4 2.9 41.9 1.9 41.2 1.1C40.5 0.5 39.5 0 38.3 0H33.6C32.5 0 31.5 0.5 30.7 1.2C30 1.9 29.5 2.9 29.5 4.1V9.8C29.5 11.1 29.9 12.3 30.6 13.3C29.3 13.4 28 14.1 27 15C25.9 16.1 25.2 17.6 25.2 19.3V30.2C25.2 30.8 25.7 31.3 26.3 31.3C32.8 31.3 39.3 31.3 45.7 31.3C46.3 31.3 46.8 30.8 46.8 30.2V19.3C46.8 17.7 46.1 16.1 45 15ZM31.7 4C31.7 3.5 31.9 3 32.3 2.6C32.7 2.2 33.1 2 33.7 2H38.4C38.9 2 39.4 2.2 39.8 2.6C40.1 3 40.3 3.5 40.3 4V6C39.2 6.2 37.1 6.3 35.6 4.6C35.2 4.2 34.6 4.1 34.1 4.5C33.4 5.1 32.6 5.4 31.7 5.3V4V4ZM31.7 7.4C33 7.5 34 7.1 34.7 6.7C36.6 8.4 38.9 8.4 40.3 8.2V9.7C40.3 10.9 39.8 11.9 39 12.7C38.2 13.5 37.2 14 36 14C34.8 14 33.8 13.5 33 12.7C32.2 11.9 31.7 10.9 31.7 9.7V7.4V7.4ZM44.7 29.2H42.7V21.3C42.7 20.7 42.2 20.2 41.6 20.2C41 20.2 40.5 20.7 40.5 21.3V29.2H31.3V21.3C31.3 20.7 30.8 20.2 30.2 20.2C29.6 20.2 29.1 20.7 29.1 21.3V29.2H27.1V19.4C27.1 18.3 27.5 17.3 28.3 16.6C29 15.9 30 15.4 31.1 15.4H33C33.9 15.9 34.9 16.2 36 16.2C37.1 16.2 38.1 15.9 39 15.4H40.7C41.8 15.4 42.8 15.8 43.5 16.6C44.2 17.3 44.7 18.3 44.7 19.4V29.2Z"></path>
@@ -702,7 +742,9 @@
                 <div class="col-span-3 h-64 rounded-3xl p-6 flex flex-col justify-around items-center">
                     <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_4715:28352)">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M45 3C36.7157 3 30 9.71573 30 18H27.5C26.6716 18 26 18.6716 26 19.5C26 20.3284 26.6716 21 27.5 21H61.5C62.3284 21 63 20.3284 63 19.5C63 18.6716 62.3284 18 61.5 18H60C60 9.71573 53.2843 3 45 3Z" fill="#4BD274"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M45 3C36.7157 3 30 9.71573 30 18H27.5C26.6716 18 26 18.6716 26 19.5C26 20.3284 26.6716 21 27.5 21H61.5C62.3284 21 63 20.3284 63 19.5C63 18.6716 62.3284 18 61.5 18H60C60 9.71573 53.2843 3 45 3Z"
+                                  fill="#4BD274"></path>
                             <path d="M51.6 62.4004H32.4C31.7 62.4004 31.2 62.9004 31.2 63.6004V70.8004C31.2 71.5004 31.7 72.0004 32.4 72.0004C33.1 72.0004 33.6 71.5004 33.6 70.8004V64.8004H50.4V70.8004C50.4 71.5004 50.9 72.0004 51.6 72.0004C52.3 72.0004 52.8 71.5004 52.8 70.8004V63.6004C52.8 62.9004 52.3 62.4004 51.6 62.4004Z"></path>
                             <path d="M49.2 27.6004C49.2 28.3004 48.7 28.8004 48 28.8004C47.3 28.8004 46.8 28.3004 46.8 27.6004C46.8 26.9004 47.3 26.4004 48 26.4004C48.7 26.4004 49.2 26.9004 49.2 27.6004Z"></path>
                             <path d="M37.2 27.6004C37.2 28.3004 36.7 28.8004 36 28.8004C35.3 28.8004 34.8 28.3004 34.8 27.6004C34.8 26.9004 35.3 26.4004 36 26.4004C36.7 26.4004 37.2 26.9004 37.2 27.6004Z"></path>
@@ -725,10 +767,12 @@
 
             <div class="col-span-12 xl:col-span-5 rounded-3xl bg-green-400 h-48 xl:h-80 p-4 xl:p-8 text-white">
                 <div class="flex justify-between">
-                    <img src="../../images/application/iPhone.webp" class="w-32 xl:w-52 h-64 xl:h-104 sm:mr-8 -mt-12 xl:-mt-20" alt="">
+                    <img src="../../images/application/iPhone.webp"
+                         class="w-32 xl:w-52 h-64 xl:h-104 sm:mr-8 -mt-12 xl:-mt-20" alt="">
                     <div class="flex flex-col gap-y-2 xl:mt-8 mr-2">
                         <img src="../../images/application/app-store.webp" class="w-24 xl:w-40 h-7 xl:h-12" alt="">
-                        <img src="../../images/application/google-play-badge (2).webp" class="w-24 xl:w-40 h-7 xl:h-12" alt="">
+                        <img src="../../images/application/google-play-badge (2).webp" class="w-24 xl:w-40 h-7 xl:h-12"
+                             alt="">
                         <img src="../../images/application/badge-new 12.webp" class="w-24 xl:w-40 h-7 xl:h-12" alt="">
                         <button class="w-24 xl:w-40 h-7 xl:h-12 bg-blue-500 text-white text-xs xl:text-xm rounded-lg font-bold pb-2">
                             وب‌اپلیکیشن
@@ -738,11 +782,385 @@
             </div>
 
         </div>
-
-
+        <div class="mt-24">
+            <h2 class="text-base xl:text-2xl font-bold mb-2 xl:mb-9">خدمات مرتبط</h2>
+            <div class="grid grid-cols-12 flex-wrap gap-2">
+                <div class="col-span-6 xl:col-span-3 rounded-xl h-32 xl:h-64 overflow-x-hidden relative text-white">
+                    <img src="../../images/search/logo-m.webp" class="w-full h-full" alt="">
+                    <div class="absolute bottom-0 right-0 left-0 p-2 xl:p-6 w-full h-full xl:h-36 bg-light-black flex flex-col justify-end items-start gap-y-4">
+                        <a href="" class="text-sm font-bold">صافکاری و نقاشی خودرو تهران</a>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xs">قیمت از 1,400,000 الی 3,000,000 تومان</div>
+                            <button class="w-32 h-9 hidden xl:block rounded-md text-green-400 border border-green-400 text-xm font-bold hover:bg-green-400 hover:text-white transition-all duration-500">
+                                جزئیات قیمت
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 xl:col-span-3 rounded-xl h-32 xl:h-64 overflow-x-hidden relative text-white">
+                    <img src="../../images/search/logo-m (1).webp" class="w-full h-full" alt="">
+                    <div class="absolute bottom-0 right-0 left-0 p-2 xl:p-6 w-full h-full xl:h-36 bg-light-black flex flex-col justify-end items-start gap-y-4">
+                        <a href="" class="text-sm font-bold">کارواش در محل تهران</a>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xs">قیمت از 1,400,000 الی 3,000,000 تومان</div>
+                            <button class="w-32 h-9 hidden xl:block rounded-md text-green-400 border border-green-400 text-xm font-bold hover:bg-green-400 hover:text-white transition-all duration-500">
+                                جزئیات قیمت
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 xl:col-span-3 rounded-xl h-32 xl:h-64 overflow-x-hidden relative text-white">
+                    <img src="../../images/search/logo-m (2).webp" class="w-full h-full" alt="">
+                    <div class="absolute bottom-0 right-0 left-0 p-2 xl:p-6 w-full h-full xl:h-36 bg-light-black flex flex-col justify-end items-start gap-y-4">
+                        <a href="" class="text-sm font-bold">لوازم یدکی خودرو تهران</a>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xs">قیمت از 1,400,000 الی 3,000,000 تومان</div>
+                            <button class="w-32 h-9 hidden xl:block rounded-md text-green-400 border border-green-400 text-xm font-bold hover:bg-green-400 hover:text-white transition-all duration-500">
+                                جزئیات قیمت
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 xl:col-span-3 rounded-xl h-32 xl:h-64 overflow-x-hidden relative text-white">
+                    <img src="../../images/search/logo-m (3).webp" class="w-full h-full" alt="">
+                    <div class="absolute bottom-0 right-0 left-0 p-2 xl:p-6 w-full h-full xl:h-36 bg-light-black flex flex-col justify-end items-start gap-y-4">
+                        <a href="" class="text-sm font-bold">نصب دزدگیر و GPS خودرو تهران</a>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xs">قیمت از 1,400,000 الی 3,000,000 تومان</div>
+                            <button class="w-32 h-9 hidden xl:block rounded-md text-green-400 border border-green-400 text-xm font-bold hover:bg-green-400 hover:text-white transition-all duration-500">
+                                جزئیات قیمت
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 rounded-3xl border border-gray-500 xl:p-4">
+            <h2 class="px-1.5 text-xm xl:text-xl font-bold mb-2 xl:mb-4 -mt-4 xl:-mt-10 bg-white xl:w-fit">سایر عبارت
+                های جستجو شده برای پنچرگیری سیار تهران:</h2>
+            <ul class="list-none p-4 text-xs xl:text-xm flex flex-wrap gap-2">
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری سیار تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعویض لاستیک در محل تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری شبانه روزی تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تنظیم باد لاستیک در محل تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری ماشین تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعویض لاستیک ماشین تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری تیوبلس تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری موتور سیکلت تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعویض زاپاس تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعویض لاستیک در محل شبانه روزی تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری فوری تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    آپاراتی شبانه روزی تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعویض لاستیک در محل تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری در محل تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری لاستیک خودرو تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعویض لاستيک ماشین در محل تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    پنچرگیری 24 ساعته تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    هزینه پنچرگیری سیار تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    قیمت پنچرگیری ماشین در محل تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    هزینه تعویض لاستیک تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    قیمت پنچرگیری ماشین تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    هزینه پنچرگیری لاستیک تیوبلس تهران
+                </li>
+                <li class="h-9 border border-gray-500 flex justify-center items-center w-fit text-gray-500 p-2 rounded-lg">
+                    تعرفه پنچرگیری تهران
+                </li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <h3 class="text-xm font-bold mb-4">در این شهر ها می توانید از خدمات هوم سرویز استفاده نمایید:</h3>
+            <ul class="flex flex-wrap gap-2 text-xm">
+                <li><a href="/service/tehran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        تهران
+                    </div>
+                </a></li>
+                <li><a href="/service/karaj">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        کرج
+                    </div>
+                </a></li>
+                <li><a href="/service/shiraz">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        شیراز
+                    </div>
+                </a></li>
+                <li><a href="/service/mashhad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        مشهد
+                    </div>
+                </a></li>
+                <li><a href="/service/isfahan">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        اصفهان
+                    </div>
+                </a></li>
+                <li><a href="/service/tabriz">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        تبریز
+                    </div>
+                </a></li>
+                <li><a href="/service/rasht">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                        رشت
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <h3 class="text-xm font-bold mb-4">خدمات پنچرگیری سیار در این شهرها ارائه می شود:</h3>
+            <ul class="flex flex-wrap gap-2 text-xm">
+                <li class="h-9 rounded-lg border border-gray-500 text-gray-500 w-fit p-2 flex justify-center items-center">
+                    پنچرگیری سیار تهران
+                </li>
+                <li class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                    <a href="/tire-fitting/karaj">پنچرگیری سیار کرج</a></li>
+                <li class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                    <a href="/tire-fitting/shiraz">پنچرگیری سیار شیراز</a></li>
+                <li class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                    <a href="/tire-fitting/mashhad">پنچرگیری سیار مشهد</a></li>
+                <li class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                    <a href="/tire-fitting/isfahan">پنچرگیری سیار اصفهان</a></li>
+                <li class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                    <a href="/tire-fitting/tabriz">پنچرگیری سیار تبریز</a></li>
+                <li class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">
+                    <a href="/tire-fitting/rasht">پنچرگیری سیار رشت</a></li>
+            </ul>
+        </div>
+        <div class="mt-8">
+            <h3 class="text-xm font-bold mb-4">برخی از محله های شهر تهران که خدمات پنچرگیری سیار در آن ارائه می
+                شود:</h3>
+            <ul class="flex flex-wrap gap-2 text-xm">
+                <li><a href="/tire-fitting/nearme">
+                    <div class="h-9 rounded-lg border border-blue-500 text-blue-500 w-fit p-2 flex justify-center items-center">
+                        <span class=""></span>
+                        پنچرگیری سیار نزدیک من
+                    </div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/east-of-tehran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پنچرگیری سیار شرق تهران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/west-of-tehran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پنچرگیری سیار غرب تهران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/north-of-tehran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پنچرگیری سیار شمال تهران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/south-of-tehran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پنچرگیری سیار جنوب تهران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/shahrake-gharb">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شهرک غرب</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/saadat-abad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">سعادت آباد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/gisha">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">گیشا</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/janatabad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">جنت آباد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/velenjak">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">ولنجک</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/chitgar">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">چیتگر</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/ekbatan">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شهرک اکباتان</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/pasdaran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پاسداران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/tehranpars">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">تهرانپارس</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/sadeghiyeh">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">صادقیه</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/punak">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پونک</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/marzdaran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">مرزداران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/niavaran">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">نیاوران</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/tajrish">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">تجریش</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/resalat">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">رسالت</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/narmak">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">نارمک</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/majidihe">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">مجیدیه</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/seyyed-khandan">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">سید خندان</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/jordan-nelson-mandela">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">جردن</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/enghelab">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">انقلاب</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/hafte-tir">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">هفت تیر</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/beheshti">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">بهشتی</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/motahhari">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">مطهری</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/argentina">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">آرژانتین</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/mirdamad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">میرداماد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/vanak">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">ونک</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/yousef-abad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">یوسف آباد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/piroozi">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پیروزی</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/valiasr">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">ولیعصر</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/shariati">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شریعتی</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/parand">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پرند</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/pardis">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">پردیس</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/shahriar">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شهریار</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/eslamshahr">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">اسلامشهر</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/andisheh">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">اندیشه</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/lavasan">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">لواسان</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/qods">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شهر قدس</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/rey">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شهر ری</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/tehransar">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">تهرانسر</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/sattarkhan">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">ستارخان</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/zafaraniyeh">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">زعفرانیه</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/fatemi">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">فاطمی</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/amirabad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">امیرآباد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/dehkadeh">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">دهکده المپیک</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/vardavard">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">وردآورد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/shahrakevalieasr">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">شهرک ولیعصر</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/yaftabad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">یافت آباد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/khaniabad">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">خانی آباد</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/navvab">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">نواب</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/ostadmoein">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">استاد معین</div>
+                </a></li>
+                <li><a href="/tire-fitting/tehran/jeyhoon">
+                    <div class="h-9 rounded-lg border border-gray-500 text-green-400 w-fit p-2 flex justify-center items-center">جیحون</div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="p-4 fixed bottom-0 right-0 left-0 bg-light xl:hidden">
+            <div class="h-14 flex justify-between items-center gap-2">
+                <div class="flex flex-grow h-14">
+                    <button class="btn btn-success w-full h-full rounded-2xl">ثبت سرویس</button>
+                </div>
+                <div class="w-14 h-14">
+                    <a href="tel:90002021" class="bg-green-400 flex w-full h-full justify-center items-center rounded-2xl">
+                        <span class="material-icons-outlined"><span class="text-lg text-white">phone_in_talk</span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
-
 
 <footer class="bg-gray-700 text-white mt-14 p-4 xl:py-12 2xl:px-32">
     <div class="flex flex-wrap gap-5 xl:gap-28">
@@ -839,145 +1257,8 @@
                 <a href="" class="">راهنمای استفاده امن</a>
             </div>
         </div>
-        <div>
-            <span class="text-base font-bold">خدمات ما</span>
-            <div class="text-sm grid grid-rows-9 grid-flow-col xl:gap-x-12 gap-y-4 mt-4">
-                <a href="" class="">نظافت راه پله و مشاعات</a>
-                <a href="" class="">نظافت منزل</a>
-                <a href="" class="">تعمیر کولر آبی</a>
-                <a href="" class="">لوله باز کنی</a>
-                <a href="" class="">تعمیر موبایل</a>
-                <a href="" class="">تعمیر موبایل</a>
-                <a href="" class="">تعمیر موبایل</a>
-                <a href="" class="">تعمیر موبایل</a>
-                <a href="" class="">تعمیر موبایل</a>
-                <a href="" class="">خشک شویی مبل</a>
-                <a href="" class="">قالیشویی</a>
-                <a href="" class="">تعمیر کولر گازی و اسپلیت</a>
-                <a href="" class="">توری پنجره</a>
-                <a href="" class="">تعمیر یخچال و فریزر</a>
-                <a href="" class="">سرویس و تعمیر پکیج</a>
-                <a href="" class="">تعمیر کامپیوتر</a>
-                <a href="" class="">اصلاح صورت و ابرو بانوان</a>
-                <a href="" class="">اپیلاسیون بانوان</a>
-            </div>
-        </div>
-        <div>
-            <span class="text-base font-bold">سرویس‌های پر کاربرد</span>
-            <div class="text-sm grid grid-rows-9 grid-flow-col xl:gap-x-12 gap-y-4 mt-4">
-                <a href="">سمپاشی</a>
-                <a href="">تعمیر کمد و کابینت</a>
-                <a href="">نصب کاغذ دیواری</a>
-                <a href="">نقاشی ساختمان</a>
-                <a href="">تعمیر مبل</a>
-                <a href="">جابجایی و اسباب کشی</a>
-                <a href="">جوشکاری</a>
-                <a href="">سیم کشی تلفن و رفع خرابی</a>
-                <a href="">رفع نم ساختمان</a>
-                <a href="">ساخت کابینت آشپزخانه</a>
-                <a href="">ساخت کمد دیواری</a>
-                <a href="">تعمیر خودرو</a>
-                <a href="">تعویض باتری خودرو</a>
-                <a href="">تزریقات در محل</a>
-                <a href="">فیزیوتراپی در منزل</a>
-                <a href="">آزمایش و نمونه گیری در محل</a>
-                <a href="">آرایشگر در منزل</a>
-                <a href="">تعمیر پارکت</a>
-            </div>
-        </div>
-        <div>
-            <span class="text-base font-bold">شهرهای تحت پوشش</span>
-            <div class="text-sm grid grid-rows-8 grid-flow-col xl:gap-x-12 gap-y-4 mt-4">
-                <a href="">تهران</a>
-                <a href="">کرج</a>
-                <a href="">قدس</a>
-                <a href="">شهریار</a>
-                <a href="">اسلام شهر</a>
-                <a href="">اندیشه</a>
-                <a href="">رباط کریم</a>
-                <a href="">پردیس</a>
-                <a href="">بومهن</a>
-                <a href="">چهاردانگه</a>
-                <a href="">دماوند</a>
-                <a href="">مشهد</a>
-                <a href="">شیراز</a>
-                <a href="">اصفهان</a>
-                <a href="">تبریز</a>
-                <a href="">رشت</a>
-            </div>
-        </div>
     </div>
-    <div class="flex flex-col gap-y-4 mt-8">
-        <div>
-            <h2 class="text-lg font-bold mb-4">هوم سرویز برند مرجع خدمات</h2>
-            <p class="text-justify text-xm">هوم‌ سرویز یک شرکت دانش بنیان است که از سال 1395 فعالیت خود را به عنوان
-                <strong>اولین پلتفرم خدمات در محل</strong> در کشور آغاز کرده است، این <strong>پلتفرم خدماتی</strong> به
-                شکلی طراحی و پیاده سازی شده است که در آن هر شخصی به سادگی بتواند برای انجام کارهای موردنیازش، افراد
-                مطمئن، معتمد و توانمند را پیدا کند. به طور مثال شما اگر به دنبال <strong>نظافتچی</strong>، <a
-                        href="https://homeservize.com/electrical-wiring">برقکار</a>، لوله کش سیار، بنای استادکار و یا
-                <strong>نقاش خوب</strong> و همینطور <strong>نجار</strong> حرفه ای یا <strong>تعمیرکار لوازم
-                    خانگی</strong> و <strong>مکانیک سیار</strong> هستید و یا نیاز به پزشک متخصص و یا <strong>آرایشگر در
-                    منزل</strong> دارید و حتی اگر نیاز به <strong>خدمات دامپزشکی</strong> در منزل دارید، کافیست از طریق
-                سایت و یا اپلکیشن هوم سرویز سفارش خود را به راحتی و با اطمینان ثبت کنید تا به متخصصین تایید صلاحیت شده
-                هوم سرویز دسترسی پیدا کنید. خدمات هوم سرویز در کلیه ساعات شبانه روز و در محل شما قابل ارائه خواهد بود.
-            </p>
-            <p class="text-justify text-xm">
-                از سوی دیگر هوم سرویز بستری برای افراد و سرویس‌دهنده‌های حرفه ای فراهم آورده است تا خدمات خود را به
-                بهترین شکل معرفی و عرضه کنند. هوم‌سرویز یک حلقه ارتباطی مناسب و مورد اطمینان بین مشتریان و تکنسین های
-                متعهد و حرفه‌ای است.
-            </p>
-        </div>
-        <div>
-            <h2 class="text-lg font-bold mb-4">خدمات در محل هوم سرویز</h2>
-            <p class="text-justify text-xm">هوم‌سرویز با بیش از 500 نوع خدمات در ۱۲ گروه مختلف در شهرهای تهران، کرج،
-                مشهد،
-                اصفهان، شیراز، تبریز و رشت در حال ارائه خدمات در محل می باشد و به تازگی فعالیت خود را در شهرهای قزوین،
-                اراک، اهواز، کرمانشاه، ارومیه، قم، همدان، یزد، ساری، بابل، گرگان، بندر عباس، زنجان، گرگان، زاهدان،
-                بجنورد، آمل، نیشابور، دزفول، قائمشهر، سبزوار، زابل و سایر شهرهای کشور عزیزمان ایران آغاز نموده است.
-                بنابراین شما اگر در جستجوی هر نوع خدماتی هستید به جای پرس و جو از دوستان و آشنایان و یا جستجو در در
-                دیوار محله ها و یا سرچ در گوگل و یا سپردن کار به شرکت های خدماتی نامعتبر، کافیست <strong>اپلیکیشن هوم
-                    سرویس</strong> را در گوشی خود داشته باشید تا در سریعترین زمان ممکن به تکنسین، متخصص، استادکار، آچار
-                به دست و یا بهتر بگوییم همیاران حرفه ای هوم سرویز دسترسی داشته باشید. در ادامه به برخی از خدمات محبوب و
-                پر استفاده هوم سرویز اشاره می کنیم:</p>
-            <p class="text-justify text-xm">نیروهای متخصص و متعهد همکار با هوم سرویز که اصطلاحا <strong>همیار هوم
-                سرویز</strong> نامگذاری شده اند، در زمینه های نظافت منزل و <strong>نظافت راه پله</strong> و مشاعات
-                ساختمان، خدمات شستشوی فرش با <strong>بهترین قالیشویی</strong>، خشک شویی مبل و موکت شویی در محل، <a
-                        href="https://homeservize.com/facade-washing">نماشویی</a> و کفسابی و <strong>خدمات
-                    مهمانداری</strong> و <a href="https://homeservize.com/wedding-services">تشریفات مجالس</a> و مهمانی
-                ها و خدمات عکاسی و فیلمبرداری در زیر مجموعه <strong>خدمات نظافت</strong> و پذیرایی آماده ارایه خدمات
-                هستند. </p>
-        </div>
-        <div>
-            <h3 class="text-lg font-bold mb-4">چرا هوم سرویز بهترین اپلیکیشن خدماتی از نگاه مشتریان است؟</h3>
-            <p class="text-justify text-xm">هوم سرویز (<strong>home servize</strong>) به منظور ایجاد تجربه خوب برای شما
-                مشتریان ضمن ایجاد بسترهای ارتباطی مناسب از طریق پلتفرم <strong>خدمات در محل</strong> هوم سرویز تمام تلاش
-                خود را در سایر بخش ها نظیر پشتیبانی و عملیات نموده است تا به بهترین شکل ممکن خدمات همیاران هوم سرویز را
-                در اختیار شما عزیزان قرار دهد. شعار هوم سرویز "همیار شماییم تا پایان سرویس" خود گویای رسالت و هدف هوم
-                سرویز در جلب رضایت حداکثری شما عزیزان می باشد. هوم­سرویز ضمن دریافت تقدیرنامه ها، جوایز و تندس های مختلف
-                طی این سال ها، به جلب رضایت بیش از&nbsp; 93 درصدی از شما مشتریان عزیز افتخار می کند. اعتقاد داریم در این
-                مسیر سخت و طولانی برای سازماندهی بازار خدمات کشور تنها چیزی که ماندگار بوده و می تواند در مسیر رشد هوم
-                سرویز لذت بخش باشد رضایت حداکثری مشتریان عزیز می باشد. لذا پر تلاش و قوی تر از همیشه همیار شما و در کنار
-                شما خواهیم بود. در ادامه به برخی از نقاط تمایز و ویژگی های هوم سرویز که باعث تفاوت های چشمگیر با سایر
-                <strong>اپلیکیشن های خدماتی</strong> شده است، اشاره خواهیم کرد:</p>
-            <ul>
-                <li>سهولت دسترسی به متخصصین و افراد حرفه ای در نزدیکی شما</li>
-                <li>دسترسی راحت به تعرفه قیمت خدمات</li>
-                <li>احراز هویت، سکونت و صلاحیت کلیه&nbsp;همیاران و متخصصین هوم سرویز</li>
-                <li>امکان انتخاب متخصص مورد نظر بر اساس اطلاعات دقیق، سوابق ایشان و نظرات مشتریان قبلی</li>
-                <li>امنیت، اعتماد و احترام در ارایه خدمات</li>
-                <li>رتبه بندی همیاران</li>
-                <li>پشتیبانی خدمات</li>
-            </ul>
-            <h3 class="text-lg font-bold mb-4">هوم سرویس (HomeService) یا هوم سرویز (HomeServize):</h3>
-            <p class="text-justify text-xm">مشتریان و کاربران هوم سرویز، با اسامی دیگری نیز هوم سرویز را می شناسند نظیر
-                <strong>هوم سرویس</strong> (<strong>Home Service</strong>) یا <strong>هوم سرویسز</strong> (<strong>Home
-                    services</strong>) که در حقیقت تمامی این نام ها در ایران با مفهوم هوم سرویز و در قالب برند هوم سرویز
-                شناخته شده است. </p>
-            <p class="text-justify text-xm">برند هوم سرویز برگرفته شده از سه عبارت هست، هوم (home)، سرویس (Service) و
-                تمایز، با تلفیق این سه عبارت برند هوم سرویز شکل گرفته است. هدف از این عبارت ارایه خدمات متمایز به
-                مشتریان و همیاران هست.</p>
-        </div>
-    </div>
+
     <div class="flex flex-col gap-8 xl:hidden mt-12">
         <div>
             <span class="text-base font-bold">تماس با ما</span>
