@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-outline-success {
+    @apply border;
+    @apply border-green-400;
+    @apply text-green-400;
+    @apply hover:bg-green-400;
+    @apply hover:border-green-400;
+    @apply hover:text-white;
+}
+
+.btn-success {
+    @apply bg-green-400;
+    @apply text-white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4bd274;
+}
+
+::-webkit-scrollbar-track {
+    background: #e7e5e5;
+}
+
+*:hover {
+    scrollbar-color: unset;
+}
+
+* {
+    scrollbar-color: unset;
+}
+
