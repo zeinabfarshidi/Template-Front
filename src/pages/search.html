@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../dist/css/tailwind.css">
     <link href="../../node_modules/material-icons/iconfont/material-icons.css" rel="stylesheet">
-    <title>صفحه اصلی</title>
+    <title>صفحه سرچ خدمات</title>
 </head>
 <body class="scroll-smooth">
 <header class="bg-white xl:bg-gray-100 h-14 xl:h-20 p-2 2xl:px-32 flex xl:gap-4 flex-wrap xl:flex-nowrap justify-between xl:justify-start items-center relative"
         x-data="{dropdown: false}">
-    <div class="bg-gray-950 z-10 fixed top-0 right-0 left-0 w-full h-full opacity-50" x-on:click="dropdown = false"
+    <div class="bg-gray-950 opacity-50 z-10 fixed top-0 right-0 left-0 w-full h-full" x-on:click="dropdown = false"
          x-bind:class="!dropdown ? 'hidden' : 'block'"></div>
     <span class="material-icons cursor-pointer" x-on:click="dropdown = !dropdown">
         <span class="text-4xl xl:hidden">menu</span>
@@ -1150,10 +1150,10 @@
         <div class="p-4 fixed bottom-0 right-0 left-0 bg-light xl:hidden">
             <div class="h-14 flex justify-between items-center gap-2">
                 <div class="flex flex-grow h-14">
-                    <button class="btn btn-success w-full h-full rounded-2xl">ثبت سرویس</button>
+                    <button class="bg-green-400 focus:bg-green-500 text-white w-full h-full rounded-2xl">ثبت سرویس</button>
                 </div>
                 <div class="w-14 h-14">
-                    <a href="tel:90002021" class="bg-green-400 flex w-full h-full justify-center items-center rounded-2xl">
+                    <a href="tel:90002021" class="bg-green-400 focus:bg-green-500 flex w-full h-full justify-center items-center rounded-2xl">
                         <span class="material-icons-outlined"><span class="text-lg text-white">phone_in_talk</span></span>
                     </a>
                 </div>

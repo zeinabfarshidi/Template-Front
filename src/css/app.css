@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.btn-success {
+    @apply bg-green-400;
+    @apply text-white;
+    @apply border-green-400;
+    @apply text-xm;
+    @apply font-bold;
+    @apply rounded-lg;
+    /*@apply px-4;*/
+    @apply pb-1.5;
+    @apply flex;
+    @apply justify-center;
+    @apply items-center;
+    @apply shadow-xl;
+    @apply hover:bg-green-500;
+    @apply hover:shadow-none;
+    @apply transition-all;
+    @apply duration-500;
+}
+
 .btn-outline-success {
     @apply border;
     @apply border-green-400;
@@ -9,12 +29,6 @@
     @apply hover:bg-green-400;
     @apply hover:border-green-400;
     @apply hover:text-white;
-}
-
-.btn-success {
-    @apply bg-green-400;
-    @apply text-white;
-    @apply border-green-400;
 }
 
 ::-webkit-scrollbar {
@@ -36,4 +50,9 @@
 * {
     scrollbar-color: unset;
 }
+
+
+
+
+
 
