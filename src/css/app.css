@@ -10,7 +10,6 @@
     @apply text-xm;
     @apply font-bold;
     @apply rounded-lg;
-    @apply pb-1.5;
     @apply flex;
     @apply justify-center;
     @apply items-center;
@@ -28,6 +27,10 @@
     @apply hover:bg-green-400;
     @apply hover:border-green-400;
     @apply hover:text-white;
+    @apply transition-all;
+    @apply duration-500;
+    @apply font-bold;
+    @apply rounded-md;
 }
 
 ::-webkit-scrollbar {
@@ -50,8 +53,8 @@
     scrollbar-color: unset;
 }
 
+@import url('../css/font.css');
 
-
-
-
-
+html {
+    @apply font-body
+}

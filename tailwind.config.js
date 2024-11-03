@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{html,js}"
   ],
   theme: {
+    fontFamily: {
+      body: ['__danaFont_e5590e', '__danaFont_Fallback_e5590e'],
+      display: ['__danaFont_e5590e', '__danaFont_Fallback_e5590e']
+    },
     container: {
       center: true,
       padding: '2rem'

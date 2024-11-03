@@ -10,9 +10,9 @@
     <title>صفحه آگهی</title>
 </head>
 <body class="scroll-smooth" x-bind:class="share ? 'overflow-hidden' : 'overflow-scroll'">
-<header class="bg-white xl:bg-gray-100 h-14 xl:h-20 p-2 2xl:px-32 flex xl:gap-4 flex-wrap xl:flex-nowrap justify-between xl:justify-start items-center"
+<header class="bg-white xl:bg-gray-100 h-14 xl:h-20 p-2 xl:py-3 2xl:px-32 flex xl:gap-4 flex-wrap xl:flex-nowrap justify-between xl:justify-start items-center"
         x-data="{dropdown: false}">
-    <div class="bg-gray-950 z-10 fixed top-0 right-0 left-0 w-full h-full opacity-50" x-on:click="dropdown = false"
+    <div class="bg-mask z-10 fixed top-0 right-0 left-0 w-full h-full" x-on:click="dropdown = false"
          x-bind:class="!dropdown ? 'hidden' : 'block'"></div>
     <span class="material-icons cursor-pointer" x-on:click="dropdown = !dropdown"><span
             class="text-4xl xl:hidden">menu</span></span>
@@ -89,7 +89,7 @@
            class="bg-green-400 text-white text-xm font-bold rounded-lg px-4 py-1.5 flex items-center justify-center shadow-xl hover:bg-green-500 hover:shadow-none transition-all duration-500 xl:hidden">مشاهده
             پروفایل</a>
         <a href=""
-           class="text-xs rounded-lg h-9 px-2.5 flex justify-center items-center hover:bg-gray-200 transition-all duration-500 gap-x-1 xl:hidden">
+           class="text-xm rounded-lg h-9 px-2.5 flex justify-center items-center hover:bg-gray-200 transition-all duration-500 gap-x-1 xl:hidden">
             <span class="">90002021</span>
             <span class="material-icons-outlined"><span class="text-lg">phone_in_talk</span></span>
         </a>
@@ -102,7 +102,7 @@
             سرویس</a>
         <hr class="w-0.5 h-10 bg-gray-200">
         <a href=""
-           class="text-xs w-max rounded-lg h-9 px-2.5 flex justify-center items-center hover:bg-gray-200 transition-all duration-500 gap-x-1">
+           class="text-xm w-max rounded-lg h-9 px-2.5 flex justify-center items-center hover:bg-gray-200 transition-all duration-500 gap-x-1">
             <span class="">90002021</span>
             <span class="material-icons-outlined"><span class="text-lg">phone_in_talk</span></span>
         </a>
@@ -204,7 +204,7 @@
                             <span class="material-icons-outlined">copy</span>
                         </div>
                     </div>
-                    <div class="grid grid-cols-12 mt-4 mr-8 text-sm font-bold gap-y-4">
+                    <div class="grid grid-cols-12 mt-4 mr-8 xl:mr-0 text-sm font-bold gap-y-4">
                         <a href="" class="col-span-12 xl:col-span-4 flex gap-x-2 text-blue-500">
                             <img src="../../images/ad/telegram.svg" alt="">
                             <p>اشتراک گذاری در تلگرام</p>
@@ -221,9 +221,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="grid grid-cols-12 mt-6 text-gray-600 gap-y-6 xl:hidden">
             <div class="col-span-12 p-4 rounded-3xl bg-gray-100 flex flex-col gap-y-5">
                 <h4 class="text-base font-bold">آمار عملکرد همیار</h4>
@@ -548,7 +545,7 @@
                     <textarea class="w-full h-60 py-3.5 px-2.5 rounded-xl bg-white mt-2" placeholder="نظر خود را بنویسید ..."></textarea>
                 </div>
                 <div class="col-span-12 mt-8 xl:flex xl:justify-center">
-                    <a href="" class="text-xm font-bold rounded-lg bg-green-400 text-white border-green-400 flex justify-center items-center shadow-xl hover:bg-green-500 hover:shadow-none transition-all duration-500 w-full xl:w-max h-9 px-8 pb-1.5">ثبت نظر</a>
+                    <a href="" class="btn-success text-xm w-full xl:w-36 h-9 px-8">ثبت نظر</a>
                 </div>
             </div>
         </form>

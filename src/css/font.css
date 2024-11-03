@@ -1,0 +1,69 @@
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/1ff7883424788526-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/cda65d7f8d494adc-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/73d4d91103e546fb-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/6aadb4ac85a1ae01-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 750;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/5f08647b45176430-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/8703b809e4311510-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_e5590e;
+    src: url(fonts/e6fd6b6fc602d413-s.p.woff) format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __danaFont_Fallback_e5590e;
+    src: local("Arial");
+    ascent-override: 95.41%;
+    descent-override: 57.81%;
+    line-gap-override: .00%;
+    size-adjust: 98.94%
+}
+
+.__className_e5590e {
+    font-family: __danaFont_e5590e, __danaFont_Fallback_e5590e
+}
+
