@@ -30,8 +30,10 @@ module.exports = {
         'light': 'linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 102.18%)',
       },
       backgroundColor: {
-        'mask': 'rgba(0, 0, 0, 0.54)'
-      }
+        'mask': 'rgba(0, 0, 0, 0.54)',
+        'transparent-green': 'rgb(6 118 17 / 54%)',
+        'transparent-blue': 'rgb(4 17 231 / 54%)',
+      },
     },
   },
   plugins: [
