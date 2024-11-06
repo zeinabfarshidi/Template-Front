@@ -12,8 +12,7 @@
 <body class="scroll-smooth" x-bind:class="share ? 'overflow-hidden' : 'overflow-scroll'">
 <header class="bg-white xl:bg-gray-100 h-14 xl:h-20 p-2 xl:py-3 2xl:px-32 flex xl:gap-4 flex-wrap xl:flex-nowrap justify-between xl:justify-start items-center"
         x-data="{dropdown: false}">
-    <div class="bg-mask z-10 fixed top-0 right-0 left-0 w-full h-full" x-on:click="dropdown = false"
-         x-bind:class="!dropdown ? 'hidden' : 'block'"></div>
+    <div class="bg-mask z-10 fixed top-0 right-0 left-0 w-full h-full" x-on:click="dropdown = false" x-cloak x-show="dropdown"></div>
     <span class="material-icons cursor-pointer" x-on:click="dropdown = !dropdown"><span
             class="text-4xl xl:hidden">menu</span></span>
     <a href="/">
@@ -141,7 +140,10 @@
                     </div>
                     <div class="flex flex-col-reverse items-center gap-y-2">
                         رتبه همیار
-                        <span class="font-bold text-green-400">همیار</span>
+                        <div class="flex justify-between items-center gap-x-2">
+                            <span class="font-bold text-green-400">همیار</span>
+                            <span class="material-icons-outlined"><span class="text-xl text-gray-400">info</span></span>
+                        </div>
                     </div>
                 </div>
                 <button class="text-xm font-bold border flex justify-center items-center rounded-lg border-indigo-400 text-indigo-400 h-10 focus:bg-indigo-400 focus:text-white transition-all duration-500">
@@ -152,7 +154,7 @@
                     ثبت سفارش با این همیار
                 </a>
             </div>
-            <div class="rounded-3xl shadow-2xl px-6 py-8 mb-8 hidden xl:flex justify-between items-start gap-x-10">
+            <div class="rounded-3xl shadow-2xl px-6 py-8 mb-8 hidden xl:flex justify-between items-start gap-x-20">
                 <div class="flex justify-between">
                     <div class="flex flex-grow justify-between gap-x-6">
                         <div class="w-40 h-40">
@@ -167,8 +169,9 @@
                                     <span class="text-green-400">4.32 از 5</span>
                                     <div class="">(از <!-- -->47<!-- --> رای)</div>
                                 </div>
-                                <div class="flex gap-x-1">رتبه در هوم‌سرویز : <span class="text-green-400">همیار</span>
-                                    <span class="material-icons-outlined text-gray-400">info</span>
+                                <div class="flex gap-x-1 items-center">رتبه در هوم‌سرویز :
+                                    <span class="text-green-400">همیار</span>
+                                    <span class="material-icons-outlined text-gray-400"><span class="text-xl">info</span></span>
                                 </div>
                             </div>
                             <div class="flex gap-x-4 items-center">
@@ -185,13 +188,16 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <a href="" class="btn-success w-max h-10 px-2">ثبت سفارش با این همیار</a>
+                <div class="w-52 h-40 flex flex-col justify-between">
+                    <button class="text-xm font-bold border flex justify-center items-center rounded-lg border-indigo-400 text-indigo-400 h-10 hover:bg-indigo-400 hover:text-white transition-all duration-500">
+                        افزودن به همیاران منتخب
+                        <span class="material-icons-outlined">grade</span>
+                    </button>
+                    <a href="" class="btn-success w-full h-10 px-2">ثبت سفارش با این همیار</a>
                 </div>
             </div>
-            <div class="xl:bg-mask z-10 fixed top-0 right-0 left-0 w-full h-full" x-on:click="dropdown = false"
-                 x-bind:class="!dropdown ? 'hidden' : 'block'" x-show="share">
-                <div class="bg-white absolute xl:relative top-0 left-0 w-full xl:w-fit xl:mt-20 xl:mx-auto border h-full xl:h-fit xl:rounded-3xl p-8">
+            <div class="xl:bg-mask z-10 fixed top-0 right-0 left-0 w-full h-full" x-cloak x-show="share">
+                <div class="bg-white absolute xl:relative top-0 left-0 w-full xl:w-3/5 xl:mt-48 xl:mx-auto border h-full xl:h-fit xl:rounded-3xl p-8">
                     <div><span class="material-icons-outlined cursor-pointer" x-on:click="share = false">close</span>
                     </div>
                     <h1 class="text-xl font-extrabold">اشتراک گذاری آدرس هوم‌سرویز من</h1>
@@ -200,11 +206,11 @@
                     <p class="text-sm font-bold mt-8 mb-2">آدرس هوم‌سرویز من</p>
                     <div class="text-sm font-bold flex justify-between items-center overflow-hidden px-3 py-2 bg-gray-100 rounded-xl h-14">
                         <p class="">https://homeservize.com/signal/UpxTK5</p>
-                        <div class="flex justify-center items-center bg-gray-500 text-white rounded-xl xl:rounded-lg w-10 h-full cursor-pointer">
+                        <div class="hidden xl:flex justify-center items-center bg-gray-500 text-white rounded-xl xl:rounded-lg w-10 h-full cursor-pointer">
                             <span class="material-icons-outlined">copy</span>
                         </div>
                     </div>
-                    <div class="grid grid-cols-12 mt-4 mr-8 xl:mr-0 text-sm font-bold gap-y-4">
+                    <div class="grid grid-cols-12 mt-4 xl:mt-12 mr-8 text-sm font-bold gap-y-4">
                         <a href="" class="col-span-12 xl:col-span-4 flex gap-x-2 text-blue-500">
                             <img src="../../images/ad/telegram.svg" alt="">
                             <p>اشتراک گذاری در تلگرام</p>

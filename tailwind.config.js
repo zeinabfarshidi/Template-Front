@@ -25,6 +25,9 @@ module.exports = {
         '104': '26rem',
         '148': '37rem',
       },
+      minWidth:{
+        '1_6': '16.666667%'
+      },
       backgroundImage: {
         'light-black': 'linear-gradient(to bottom, rgba(34,34,34, 0), rgba(34,34,34, 0.8) 45%, rgba(34,34,34, 1))',
         'light': 'linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 102.18%)',
