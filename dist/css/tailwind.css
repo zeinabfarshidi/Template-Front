@@ -2599,6 +2599,10 @@ input.tab:checked + .tab-content,
   margin-right: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -2657,6 +2661,10 @@ input.tab:checked + .tab-content,
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .line-clamp-1 {
@@ -3831,6 +3839,11 @@ html {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-green-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-green-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(240 253 244 / var(--tw-bg-opacity));
@@ -4102,6 +4115,10 @@ html {
     margin-top: 2rem;
   }
 
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .xl\:line-clamp-none {
     overflow: visible;
     display: block;
@@ -4214,6 +4231,10 @@ html {
     width: 4rem;
   }
 
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .xl\:w-2\/5 {
     width: 40%;
   }
@@ -4257,6 +4278,10 @@ html {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-1\/3 {
+    width: 33.333333%;
   }
 
   .xl\:min-w-1_6 {
@@ -4361,10 +4386,6 @@ html {
     border-radius: 0.5rem;
   }
 
-  .xl\:rounded-xl {
-    border-radius: 0.75rem;
-  }
-
   .xl\:rounded-e-none {
     border-start-end-radius: 0px;
     border-end-end-radius: 0px;
@@ -4462,6 +4483,10 @@ html {
     padding-bottom: 3rem;
   }
 
+  .xl\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .xl\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -4480,10 +4505,6 @@ html {
 
   .xl\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .xl\:pb-16 {
-    padding-bottom: 4rem;
   }
 
   .xl\:text-left {
